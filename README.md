@@ -1,25 +1,17 @@
-# 🎈 Blank app template
+# 🤗 Power Fusion Academic Paraphraser
 
-A simple Streamlit app template for you to modify!
+Streamlit port of a hybrid **BART + T5** neural paraphrasing engine.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Live App
+Deploy at: https://share.streamlit.io
 
-### How to run it on your own machine
+## Features
+- Dual-model candidate generation (BART + T5)
+- Power slider (1–5) controls rewrite strength
+- Sentence-level hybrid rewrite with best-candidate selection
+- Academic-friendly output
 
-Prerequisite: install `uv` if you don't already have it.
-
-```
-$ curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-1. Sync the dependencies
-
-   ```
-   $ uv sync
-   ```
-
-2. Run the app
-
-   ```
-   $ uv run streamlit run streamlit_app.py
-   ```
+## Run locally
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
